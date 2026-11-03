@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 部署到正式域名后，请把 https://g-uno-web.github.io/BonusBlock/ 全部替换为你的正式站点根地址（含结尾斜杠）。 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://g-uno-web.github.io/BonusBlock/</loc><changefreq>weekly</changefreq><priority>1</priority><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://g-uno-web.github.io/BonusBlock/privacy.html</loc><changefreq>monthly</changefreq><priority>0.4</priority><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://g-uno-web.github.io/BonusBlock/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://g-uno-web.github.io/BonusBlock/contact.html</loc><changefreq>monthly</changefreq><priority>0.4</priority><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://g-uno-web.github.io/BonusBlock/disclaimer.html</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://g-uno-web.github.io/BonusBlock/articles/bitcoin-basics.html</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://g-uno-web.github.io/BonusBlock/articles/how-to-read-market.html</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://g-uno-web.github.io/BonusBlock/articles/spot-vs-contract.html</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://g-uno-web.github.io/BonusBlock/articles/wallet-security.html</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://g-uno-web.github.io/BonusBlock/articles/risk-management.html</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://g-uno-web.github.io/BonusBlock/articles/data-sources.html</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-11-03</lastmod></url>
+</urlset>

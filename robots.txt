@@ -1,0 +1,13 @@
+# BonusBlock · robots.txt
+# 部署到正式域名后，请把下面 Sitemap 的地址替换为你的正式站点地址。
+User-agent: *
+Allow: /
+
+# Google AdSense 抓取器需能读取 /ads.txt 与页面内容
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://g-uno-web.github.io/BonusBlock/sitemap.xml

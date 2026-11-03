@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>如何读懂行情页：价格、涨跌幅与 24 小时高低 · BonusBlock</title>
+<meta name="description" content="逐项拆解行情卡片上的每个数字：最新价是怎么来的、涨跌幅以什么为基准、24h 高低为什么不等于你能成交的价格，以及走势线到底画的是什么。">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html">◆ BonusBlock<small>MARKET INTEL</small></a>
+    <nav class="site-nav">
+      <a href="../index.html" data-ui="home">首页</a>
+      <a href="../index.html#insights" data-ui="guides">资讯指南</a>
+      <a href="../about.html" data-ui="about">关于我们</a>
+      <a href="../privacy.html" data-ui="privacy">隐私政策</a>
+      <a href="../contact.html" data-ui="contact">联系我们</a>
+      <a href="../disclaimer.html" data-ui="disclaimer">免责声明</a>
+    </nav>
+    <select id="langSelect" class="lang-select"></select>
+  </div>
+</header>
+<main class="wrap article">
+  <div class="crumb"><a href="../index.html" data-ui="back">← 返回首页</a> / <a href="../index.html#insights" data-ui="guides">资讯指南</a> / 行情解读</div>
+  <h1>如何读懂行情页：价格、涨跌幅与 24 小时高低</h1>
+  <div class="meta">BonusBlock 原创 · 行情解读 · 约 7 分钟 · 发布于 2026-11-03</div>
+  <p class="abstract">逐项拆解行情卡片上的每个数字：最新价是怎么来的、涨跌幅以什么为基准、24h 高低为什么不等于你能成交的价格，以及走势线到底画的是什么。</p>
+  <div class="toc"><b>本文目录</b>
+    <a href="#s1">1. 一、最新价：最后一笔成交，不是买一卖一</a>
+    <a href="#s2">2. 二、24h 涨跌幅：基准是 24 小时前的价格</a>
+    <a href="#s3">3. 三、24h 高 / 低：区间极值，不是可成交价</a>
+    <a href="#s4">4. 四、USDT 与计价单位</a>
+    <a href="#s5">5. 五、走势线画的是什么</a>
+    <a href="#s6">6. 六、延迟与刷新</a>
+  </div>
+  <h2 id="s1">一、最新价：最后一笔成交，不是买一卖一</h2>
+    <p>行情卡片上最醒目的数字，通常是<strong>最新成交价</strong>（last price），即该交易对最近一笔撮合成交的价格。它既不是卖一价，也不是买一价，更不是平台给你的「报价」。</p><p>买卖盘之间永远存在价差（spread）。你真正能买到的价格取决于挂单簿深度：买入通常按卖一档往上吃单，卖出按买一档往下吃单。单子越大，越可能吃掉多档，成交均价就越偏离最新价。</p>
+    <h2 id="s2">二、24h 涨跌幅：基准是 24 小时前的价格</h2>
+    <p>计算公式大致是：<code>(当前价 − 24 小时前价格) ÷ 24 小时前价格 × 100%</code>。注意它比较的是<strong>滚动 24 小时窗口</strong>的起点，而不是「昨天收盘价」——加密市场 24 小时连续交易，本来也没有收盘概念。</p><p>所以同一个币种，在不同数据商页面上显示的涨跌幅可能有小幅差异：窗口切点、快照时间、取的是成交价还是标记价，都会带来偏差。看到 +2.35% 和 +2.41% 不必怀疑谁在造假，先看口径。</p>
+    <h2 id="s3">三、24h 高 / 低：区间极值，不是可成交价</h2>
+    <p>这两个数是滚动窗口内的最高与最低成交价。它们描述<strong>曾经发生过什么</strong>，不代表此刻有人愿意在该价位与你成交。极端行情里，最高价可能只由一笔极小的单子打出，甚至只是某个瞬间的插针。</p><p>把「24h 低点」当成一定能买到的支撑位，是很典型也挺危险的误读。</p>
+    <h2 id="s4">四、USDT 与计价单位</h2>
+    <p>本站统一展示 <code>XXX / USDT</code>，即以泰达币计价的交易对。读价格时先确认计价币种：同一资产用 USDT、USD、BTC 计价，数字完全不同。另外像 DOGE、TRX 这类单价很低的币，小数位数与最小变动单位（tick size）会直接影响你看盘时的精度感。</p>
+    <h2 id="s5">五、走势线画的是什么</h2>
+    <p>卡片下方那条迷你曲线，本站取的是<strong>近 24 根小时 K 线的收盘价</strong>，不是逐笔成交，也不是 7 天走势。它只用来表现短期方向感，不适合当技术分析依据：点少、无成交量、无均线，放大看会丢失大量信息。</p><p>颜色方面，本站默认<strong>红涨绿跌</strong>（中国大陆习惯），可一键切换为国际惯例的绿涨红跌；切换只影响颜色，不改变数值。</p>
+    <h2 id="s6">六、延迟与刷新</h2>
+    <p>本站默认每 30 秒刷新一次，走势线另有缓存；浏览器切到后台时会暂停刷新，回到前台立即同步。若公开接口不可达，页面会明确标注「演示数据」而不是把旧价格装成实时价。<strong>任何需要下单的决策，都请以交易所官方页面为准。</strong></p><div class="callout"><b>速查：</b>最新价 ≠ 挂单价；涨跌幅基准是 24h 前；24h 高低 ≠ 可成交价；走势线 = 小时收盘价串；页面价格可能有延迟。</div>
+  <div class="en-summary"><b>ENGLISH SUMMARY</b>A field-by-field guide to a market card: what last price actually means, the reference point behind the 24h percentage, why the 24h high/low is not a tradable quote, what the sparkline plots, and a checklist of common misreadings.</div>
+  <div class="rel">
+      <a href="bitcoin-basics.html">比特币是什么：从账本问题到区块链</a>
+      <a href="spot-vs-contract.html">现货与合约：两种交易方式的本质区别</a>
+      <a href="wallet-security.html">钱包与助记词：资产安全的第一课</a>
+  </div>
+  <div class="endnote">本文为原创科普内容，用于解释概念与数据口径，不构成投资建议、要约或收益承诺。文中价格与算例仅用于说明。虚拟资产价格波动剧烈，请独立判断并遵守所在地法律法规。<br>本站为独立资讯站点，与任何交易所无隶属或授权关系；<a href="../disclaimer.html">查看免责声明与返佣披露</a>。</div>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <span data-ui="rights">© 2026 BonusBlock · 独立资讯站，非交易所官方</span>
+    <a href="../about.html" data-ui="about">关于我们</a>
+    <a href="../privacy.html" data-ui="privacy">隐私政策</a>
+    <a href="../contact.html" data-ui="contact">联系我们</a>
+    <a href="../disclaimer.html" data-ui="disclaimer">免责声明</a>
+    <a href="../index.html">BonusBlock 首页</a>
+  </div>
+</footer>
+<script src="../assets/site.js"></script>
+</body>
+</html>

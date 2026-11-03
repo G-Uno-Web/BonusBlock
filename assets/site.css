@@ -1,0 +1,74 @@
+/* BonusBlock · 文章页与法律页共用样式 */
+:root{
+  --bg:#0B0E11; --bg-2:#12161C; --card:#181A20;
+  --line:#2B3139; --line-soft:#22272E;
+  --text:#EAECEF; --body:#CDD2D9; --muted:#848E9C; --muted-2:#5E6673;
+  --gold:#F0B90B; --gold-2:#FCD535;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--text); line-height:1.75;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+/* 顶栏 */
+.site-head{border-bottom:1px solid var(--line);background:rgba(11,14,17,.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(10px)}
+.site-head .wrap{display:flex;align-items:center;gap:26px;min-height:64px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:18px;letter-spacing:.01em;color:var(--gold-2);white-space:nowrap}
+.brand small{display:block;font-size:9px;letter-spacing:.18em;color:var(--muted-2);font-weight:600;line-height:1.3}
+.site-nav{display:flex;gap:20px;flex:1;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.site-nav a:hover{color:var(--gold-2)}
+.lang-select{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:12px;cursor:pointer;max-width:150px}
+
+/* 法律文档 */
+.doc{padding:56px 24px 88px}
+.doc-kicker{font-size:11px;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+.doc h1{font-size:34px;line-height:1.3;margin-top:12px}
+.doc .lead{margin-top:16px;color:var(--muted);font-size:15px}
+.doc-item{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line-soft)}
+.doc-item .num{font:600 13px/1.75 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--gold);min-width:30px}
+.doc-item p{font-size:14.5px;color:var(--body)}
+.doc-foot{margin-top:30px;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--card);font-size:12.5px;color:var(--muted)}
+
+/* 文章 */
+.article{padding:48px 24px 96px}
+.article .crumb{font-size:12px;color:var(--muted-2)}
+.article .crumb a:hover{color:var(--gold-2)}
+.article h1{font-size:32px;line-height:1.35;margin-top:14px}
+.article .meta{font-size:12px;color:var(--muted-2);margin-top:14px}
+.article .abstract{margin-top:20px;padding:16px 18px;border-left:3px solid var(--gold);background:var(--card);border-radius:0 10px 10px 0;color:var(--muted);font-size:14px}
+.article .toc{margin:26px 0;padding:18px 20px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.article .toc b{font-size:12px;color:var(--gold);letter-spacing:.06em}
+.article .toc a{display:block;font-size:13px;color:var(--muted);padding:4px 0}
+.article .toc a:hover{color:var(--gold-2)}
+.article h2{font-size:21px;margin:38px 0 12px;padding-top:6px}
+.article h3{font-size:16.5px;margin:26px 0 10px;color:var(--gold-2)}
+.article p{margin:12px 0;font-size:15px;color:var(--body)}
+.article ul,.article ol{margin:12px 0 14px 24px;color:var(--body);font-size:15px}
+.article li{margin:6px 0}
+.article strong{color:var(--text)}
+.article code{font-family:ui-monospace,Consolas,monospace;font-size:13px;background:var(--card-2,#1E2329);padding:2px 6px;border-radius:4px;color:var(--gold-2)}
+.article .callout{margin:22px 0;padding:16px 18px;border:1px solid rgba(240,185,11,.3);border-radius:12px;background:rgba(240,185,11,.06);font-size:14px;color:var(--muted)}
+.article .callout b{color:var(--gold-2)}
+.article .en-summary{margin-top:36px;padding:18px 20px;border:1px dashed var(--line);border-radius:12px;font-size:13.5px;color:var(--muted)}
+.article .en-summary b{display:block;color:var(--gold);font-size:11px;letter-spacing:.1em;margin-bottom:8px}
+.article .rel{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px}
+.article .rel a{font-size:12.5px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;color:var(--muted)}
+.article .rel a:hover{border-color:var(--gold);color:var(--gold-2)}
+.article .endnote{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted-2)}
+
+/* 页脚 */
+.site-foot{border-top:1px solid var(--line);padding:26px 0;font-size:12px;color:var(--muted-2)}
+.site-foot .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
+.site-foot a:hover{color:var(--gold-2)}
+
+@media(max-width:640px){
+  .doc h1,.article h1{font-size:26px}
+  .site-nav{display:none}
+  .doc,.article{padding-top:36px}
+  .site-head .wrap{gap:14px;min-height:58px}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>现货与合约：两种交易方式的本质区别 · BonusBlock</title>
+<meta name="description" content="从所有权、保证金、杠杆到强平机制，解释为什么明明方向看对了，现货能扛过去、合约却可能已经出局。">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html">◆ BonusBlock<small>MARKET INTEL</small></a>
+    <nav class="site-nav">
+      <a href="../index.html" data-ui="home">首页</a>
+      <a href="../index.html#insights" data-ui="guides">资讯指南</a>
+      <a href="../about.html" data-ui="about">关于我们</a>
+      <a href="../privacy.html" data-ui="privacy">隐私政策</a>
+      <a href="../contact.html" data-ui="contact">联系我们</a>
+      <a href="../disclaimer.html" data-ui="disclaimer">免责声明</a>
+    </nav>
+    <select id="langSelect" class="lang-select"></select>
+  </div>
+</header>
+<main class="wrap article">
+  <div class="crumb"><a href="../index.html" data-ui="back">← 返回首页</a> / <a href="../index.html#insights" data-ui="guides">资讯指南</a> / 基础概念</div>
+  <h1>现货与合约：两种交易方式的本质区别</h1>
+  <div class="meta">BonusBlock 原创 · 基础概念 · 约 8 分钟 · 发布于 2026-11-03</div>
+  <p class="abstract">从所有权、保证金、杠杆到强平机制，解释为什么明明方向看对了，现货能扛过去、合约却可能已经出局。</p>
+  <div class="toc"><b>本文目录</b>
+    <a href="#s1">1. 一、现货：买的是资产本身</a>
+    <a href="#s2">2. 二、合约：买的是价格变动的协议</a>
+    <a href="#s3">3. 三、保证金与强平</a>
+    <a href="#s4">4. 四、资金费率与到期</a>
+    <a href="#s5">5. 五、给新手的判断清单</a>
+  </div>
+  <h2 id="s1">一、现货：买的是资产本身</h2>
+    <p>现货交易完成后，资产所有权转移到你的账户。币价下跌，你持有的币变少的是<strong>市值</strong>，不是数量；只要不卖，就没有「被强制平掉」这回事，最坏情况是标的归零。</p><p>因此现货的风险边界很清晰：最大损失约等于投入本金。这也是为什么新手通常被建议先从现货理解市场。</p>
+    <h2 id="s2">二、合约：买的是价格变动的协议</h2>
+    <p>合约不交割现货（永续合约尤其如此），它是对未来价格的一份协议，用保证金担保履约。你并没有「持有」那些币，持有的是一个<strong>带杠杆的敞口</strong>。</p><p>敞口大小 = 保证金 × 杠杆倍数。10 倍杠杆下，标的波动 1%，你的权益波动约 10%——这还没算手续费与资金费率。</p>
+    <h2 id="s3">三、保证金与强平</h2>
+    <p>平台会设一个<strong>维持保证金率</strong>。当亏损使权益跌破这条线，系统会强制平仓，避免亏损超过你交的保证金。关键在于：强平看的是<strong>过程中的最低权益</strong>，不是最终价格。</p><div class="callout"><b>典型场景：</b>你在 100 买入 10 倍多单，价格先插针到 91 再回到 105。现货账户毫发无伤，合约账户可能已在 91 附近被强平，后面的反弹与你无关。这就是「方向对了却亏了」。</div>
+    <h2 id="s4">四、资金费率与到期</h2>
+    <p>永续合约没有到期日，靠<strong>资金费率</strong>把合约价锚定现货价：多头拥挤时费率通常为正，由多头付给空头；反之亦然。持仓过夜的成本会随行情变化，长期持仓时这是不可忽视的隐性成本。交割合约则有固定到期日与结算价。</p>
+    <h2 id="s5">五、给新手的判断清单</h2>
+    <ul><li>能否承受<strong>全部本金损失</strong>？不能就别碰杠杆。</li><li>是否理解强平价怎么算？算不出来就不要下单。</li><li>是否把手续费、资金费率、滑点都计入了预期？</li><li>是否有明确的止损，并且能接受插针带来的额外滑点？</li><li>是否分得清「我看对方向」和「我能活到方向兑现」？</li></ul><p>合约是工具，不是放大收益的快捷键。它放大的从来都是<strong>波动</strong>，既包括盈利也包括亏损。</p>
+  <div class="en-summary"><b>ENGLISH SUMMARY</b>Spot transfers ownership of the asset; a derivative is an agreement on price movement. This article walks through margin, leverage, maintenance margin and liquidation to explain why being right on direction is not enough.</div>
+  <div class="rel">
+      <a href="bitcoin-basics.html">比特币是什么：从账本问题到区块链</a>
+      <a href="how-to-read-market.html">如何读懂行情页：价格、涨跌幅与 24 小时高低</a>
+      <a href="wallet-security.html">钱包与助记词：资产安全的第一课</a>
+  </div>
+  <div class="endnote">本文为原创科普内容，用于解释概念与数据口径，不构成投资建议、要约或收益承诺。文中价格与算例仅用于说明。虚拟资产价格波动剧烈，请独立判断并遵守所在地法律法规。<br>本站为独立资讯站点，与任何交易所无隶属或授权关系；<a href="../disclaimer.html">查看免责声明与返佣披露</a>。</div>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <span data-ui="rights">© 2026 BonusBlock · 独立资讯站，非交易所官方</span>
+    <a href="../about.html" data-ui="about">关于我们</a>
+    <a href="../privacy.html" data-ui="privacy">隐私政策</a>
+    <a href="../contact.html" data-ui="contact">联系我们</a>
+    <a href="../disclaimer.html" data-ui="disclaimer">免责声明</a>
+    <a href="../index.html">BonusBlock 首页</a>
+  </div>
+</footer>
+<script src="../assets/site.js"></script>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="币安专属邀请注册通道 · 邀请码 URPCIHGD · 主流加密货币实时行情">
-<title>币安邀请注册 · 开启你的加密资产之旅 | URPCIHGD</title>
+<meta name="description" content="BonusBlock · 独立加密货币行情资讯与入门指南 · 邀请码 URPCIHGD · 主流币种实时行情">
+<title>BonusBlock · 实时行情与加密指南 | URPCIHGD</title>
 <style>
   :root{
     --bg:#0B0E11;
@@ -354,6 +354,38 @@
     .cta-short{display:inline}
     .nav-links{display:none}
   }
+
+  /* ---------- 独立站点声明 / 返佣披露 ---------- */
+  .disclosure{border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);background:linear-gradient(180deg,rgba(240,185,11,.055),transparent)}
+  .disclosure .wrap{padding-top:26px;padding-bottom:26px}
+  .d-title{display:flex;align-items:center;gap:8px;color:var(--gold-2);font-size:14px;font-weight:700;letter-spacing:.02em}
+  .d-body{margin-top:10px;font-size:13.5px;line-height:1.85;color:var(--muted);max-width:1000px}
+  .d-body b{color:var(--text);font-weight:600}
+  .d-note{margin-top:10px;font-size:12px;color:var(--muted-2)}
+  .d-links{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px 20px}
+  .d-links a{font-size:12.5px;color:var(--gold);border-bottom:1px dashed rgba(240,185,11,.45)}
+  .d-links a:hover{color:var(--gold-2)}
+
+  /* ---------- 原创资讯板块 ---------- */
+  .insights{padding:78px 0;border-top:1px solid var(--line-soft)}
+  .ins-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+  .ins-card{display:flex;flex-direction:column;padding:22px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);transition:transform .2s,border-color .2s}
+  .ins-card:hover{transform:translateY(-3px);border-color:var(--gold)}
+  .ins-tag{align-self:flex-start;font-size:11px;letter-spacing:.06em;color:var(--gold);background:var(--gold-dim);border:1px solid rgba(240,185,11,.28);padding:3px 9px;border-radius:99px}
+  .ins-card h3{margin-top:14px;font-size:17px;line-height:1.45}
+  .ins-card p{margin-top:10px;font-size:13px;color:var(--muted);line-height:1.75;flex:1}
+  .ins-foot{margin-top:16px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--muted-2)}
+  .ins-foot .more{color:var(--gold)}
+  .ins-notes{margin-top:18px;font-size:12px;color:var(--muted-2)}
+
+  /* ---------- 页脚法律链接 ---------- */
+  .f-legal{margin-top:22px;padding-top:18px;border-top:1px solid var(--line-soft);display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px}
+  .f-legal .lb{font-size:12px;color:var(--muted-2);letter-spacing:.04em}
+  .f-legal a{font-size:12.5px;color:var(--muted)}
+  .f-legal a:hover{color:var(--gold-2)}
+
+  @media(max-width:960px){ .ins-grid{grid-template-columns:repeat(2,1fr)} }
+  @media(max-width:640px){ .insights{padding:56px 0} .ins-grid{grid-template-columns:1fr} .disclosure .wrap{padding-top:20px;padding-bottom:20px} }
 </style>
 </head>
 <body>
@@ -370,12 +402,13 @@
 <!-- 导航 -->
 <nav>
   <div class="wrap">
-    <a href="#top" class="brand" aria-label="币安邀请页首页">
+    <a href="#top" class="brand" aria-label="BonusBlock 首页">
       <span class="mark"><i></i><i></i><i></i><i></i><i></i></span>
-      <span>BINANCE<small>INVITE</small></span>
+      <span>BonusBlock<small>MARKET INTEL</small></span>
     </a>
     <div class="nav-links">
       <a href="#market">实时行情</a>
+      <a href="#insights">资讯指南</a>
       <a href="#benefits">邀请权益</a>
       <a href="#steps">注册流程</a>
       <a href="#faq">常见问题</a>
@@ -455,6 +488,21 @@
     </div>
   </div>
 </header>
+
+<!-- 独立站点声明 / 商业关系披露 -->
+<section class="disclosure" id="disclosure">
+  <div class="wrap">
+    <div class="d-title">◆ <span id="disTitle">独立站点声明与商业关系披露</span></div>
+    <p class="d-body" id="disBody">BonusBlock 是独立的加密货币行情资讯网站，<b>并非由币安（Binance）或其任何关联方运营，也不代表交易所官方</b>。本页包含邀请（返佣）链接：若你通过本页链接注册并交易，我们可能从平台获得推广佣金，<b>你无需为此支付任何额外费用</b>。佣金关系不影响行情数据的展示与内容立场。价格来自公开市场接口，仅供参考；注册前请核对浏览器地址栏域名，并通过交易所官方渠道核实活动规则。</p>
+    <div class="d-note" id="disNote">本站不提供投资建议、不代客理财、不代为注册，也不收集你的交易所账号信息。最近更新：2026 年 11 月。</div>
+    <div class="d-links">
+      <a href="about.html" id="dlAbout">关于我们</a>
+      <a href="disclaimer.html" id="dlDisclaimer">免责声明与返佣披露</a>
+      <a href="privacy.html" id="dlPrivacy">隐私政策</a>
+      <a href="contact.html" id="dlContact">联系我们</a>
+    </div>
+  </div>
+</section>
 
 <!-- 实时行情 -->
 <section class="market-sec" id="market">
@@ -545,6 +593,19 @@
   </div>
 </section>
 
+<!-- 原创资讯 -->
+<section class="insights" id="insights">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">Research &amp; Guides</div>
+      <h2>加密货币入门与市场指南</h2>
+      <p>由本站独立撰写的原创内容，帮助你理解行情、风险与基础概念，而不只是看一个价格。</p>
+    </div>
+    <div class="ins-grid" id="insGrid"></div>
+    <div class="ins-notes" id="insNotes">以下文章以简体中文撰写并附英文摘要；文中行情示例仅用于说明，不构成投资建议。</div>
+  </div>
+</section>
+
 <!-- 底部 CTA -->
 <div class="final">
   <div class="wrap">
@@ -561,7 +622,7 @@
   <div class="wrap">
     <div class="f-top">
       <div class="f-brand">
-        <b>◆ BINANCE INVITE</b>
+        <b>◆ BonusBlock</b>
         本页为邀请推广页面，用于展示主流加密货币公开市场行情并引导至注册页。具体活动、费率、权益与规则均以官方注册页及活动中心公布内容为准。
       </div>
       <div class="f-links">
@@ -569,8 +630,15 @@
         <a href="#benefits">邀请权益</a>
         <a href="#steps">注册流程</a>
         <a href="#faq">常见问题</a>
-        <a data-reg href="https://www.bsmkweb.net/register?ref=URPCIHGD" target="_blank" rel="noopener noreferrer">官方注册 ↗</a>
+        <a data-reg href="https://www.bsmkweb.net/register?ref=URPCIHGD" target="_blank" rel="noopener noreferrer">前往注册页 ↗</a>
       </div>
+    </div>
+    <div class="f-legal">
+      <span class="lb" id="flLabel">法律与合规</span>
+      <a href="about.html" id="flAbout">关于我们</a>
+      <a href="privacy.html" id="flPrivacy">隐私政策</a>
+      <a href="contact.html" id="flContact">联系我们</a>
+      <a href="disclaimer.html" id="flDisclaimer">免责声明</a>
     </div>
     <div class="risk">
       <strong>⚠ 风险提示：</strong>虚拟货币并非法定货币，价格波动剧烈，交易具有高风险的投机性，可能导致本金全部损失。虚拟货币相关业务活动在中国大陆受到严格监管，请务必遵守所在国家/地区的法律法规，根据自身风险承受能力独立判断、谨慎决策。本页所有行情数据仅作信息展示，不构成任何投资建议或邀约。请自行核实网址域名真实性，谨防仿冒与钓鱼网站。
@@ -641,8 +709,8 @@
 
   var I18N = {};
   I18N['zh-CN'] = {
-    'meta.title':'币安邀请注册 · 开启你的加密资产之旅 | {{code}}',
-    'meta.desc':'币安专属邀请注册通道 · 邀请码 {{code}} · 主流加密货币实时行情',
+    'meta.title':'BonusBlock · 实时行情与加密指南 | {{code}}',
+    'meta.desc':'BonusBlock 独立加密货币行情资讯与原创指南 · 邀请码 {{code}} · 非交易所官方站点',
     'topbar.tag':'◆ 专属邀请通道', 'topbar.note':'邀请码 {{code}} · 注册自动绑定',
     'nav.market':'实时行情','nav.benefits':'邀请权益','nav.steps':'注册流程','nav.faq':'常见问题',
     'nav.cta':'立即注册','nav.ctaShort':'注册',
@@ -695,8 +763,8 @@
     'coin.xrp':'瑞波币','coin.doge':'狗狗币','coin.ada':'艾达币','coin.trx':'波场'
   };
   I18N['en'] = {
-    'meta.title':'Binance Invite · Start Your Crypto Journey | {{code}}',
-    'meta.desc':'Exclusive Binance invite · Referral code {{code}} · Live prices of major cryptocurrencies',
+    'meta.title':'BonusBlock · Live Crypto Prices & Guides | {{code}}',
+    'meta.desc':'Independent crypto market data and original guides. Referral code {{code}}. Not affiliated with Binance.',
     'topbar.tag':'◆ Exclusive Invite', 'topbar.note':'Code {{code}} · applied automatically',
     'nav.market':'Live Prices','nav.benefits':'Invite Perks','nav.steps':'How to Join','nav.faq':'FAQ',
     'nav.cta':'Sign Up','nav.ctaShort':'Join',
@@ -748,8 +816,8 @@
     'status.demo':'Demo data · market APIs unreachable, for reference only'
   };
   I18N['zh-TW'] = {
-    'meta.title':'幣安邀請註冊 · 開啟你的加密資產之旅 | {{code}}',
-    'meta.desc':'幣安專屬邀請註冊通道 · 邀請碼 {{code}} · 主流加密貨幣即時行情',
+    'meta.title':'BonusBlock · 即時行情與加密指南 | {{code}}',
+    'meta.desc':'BonusBlock 獨立加密貨幣行情資訊與原創指南 · 邀請碼 {{code}} · 非交易所官方站點',
     'topbar.tag':'◆ 專屬邀請通道','topbar.note':'邀請碼 {{code}} · 註冊自動綁定',
     'nav.market':'即時行情','nav.benefits':'邀請權益','nav.steps':'註冊流程','nav.faq':'常見問題',
     'nav.cta':'立即註冊','nav.ctaShort':'註冊',
@@ -802,8 +870,8 @@
     'coin.xrp':'瑞波幣','coin.doge':'狗狗幣','coin.ada':'艾達幣','coin.trx':'波場'
   };
   I18N['ja'] = {
-    'meta.title':'Binance 招待登録 · 暗号資産の旅を始めよう | {{code}}',
-    'meta.desc':'Binance 専用招待リンク · 招待コード {{code}} · 主要暗号資産のリアルタイム価格',
+    'meta.title':'BonusBlock · 暗号資産のリアルタイム価格とガイド | {{code}}',
+    'meta.desc':'独立系の暗号資産マーケット情報サイト。オリジナル解説と招待コード {{code}}。取引所の公式サイトではありません。',
     'topbar.tag':'◆ 専用招待リンク','topbar.note':'招待コード {{code}} · 登録時に自動適用',
     'nav.market':'リアルタイム価格','nav.benefits':'招待特典','nav.steps':'登録手順','nav.faq':'よくある質問',
     'nav.cta':'今すぐ登録','nav.ctaShort':'登録',
@@ -857,8 +925,8 @@
     'coin.xrp':'XRP','coin.doge':'ドージコイン','coin.ada':'カルダノ','coin.trx':'TRON'
   };
   I18N['ko'] = {
-    'meta.title':'바이넌스 초대 가입 · 암호자산 여정을 시작하세요 | {{code}}',
-    'meta.desc':'바이넌스 전용 초대 링크 · 추천 코드 {{code}} · 주요 코인 실시간 시세',
+    'meta.title':'BonusBlock · 실시간 암호화폐 시세와 가이드 | {{code}}',
+    'meta.desc':'독립 암호화폐 시장 정보 사이트. 오리지널 가이드와 초대 코드 {{code}}. 거래소 공식 사이트가 아닙니다.',
     'topbar.tag':'◆ 전용 초대 링크','topbar.note':'추천 코드 {{code}} · 가입 시 자동 적용',
     'nav.market':'실시간 시세','nav.benefits':'초대 혜택','nav.steps':'가입 절차','nav.faq':'자주 묻는 질문',
     'nav.cta':'지금 가입','nav.ctaShort':'가입',
@@ -912,8 +980,8 @@
     'coin.xrp':'XRP','coin.doge':'도지코인','coin.ada':'카르다노','coin.trx':'TRON'
   };
   I18N['es'] = {
-    'meta.title':'Invitación Binance · Comienza tu viaje cripto | {{code}}',
-    'meta.desc':'Invitación exclusiva de Binance · Código de referido {{code}} · Precios en vivo de las principales criptomonedas',
+    'meta.title':'BonusBlock · Precios cripto en vivo y guías | {{code}}',
+    'meta.desc':'Sitio independiente de datos de mercado cripto con guías originales. Código de referido {{code}}. No afiliado a Binance.',
     'topbar.tag':'◆ Invitación exclusiva','topbar.note':'Código {{code}} · se aplica automáticamente',
     'nav.market':'Precios en vivo','nav.benefits':'Ventajas de la invitación','nav.steps':'Cómo registrarse','nav.faq':'Preguntas frecuentes',
     'nav.cta':'Registrarse','nav.ctaShort':'Registro',
@@ -967,8 +1035,8 @@
     'status.demo':'Datos de demostración · APIs de mercado no disponibles'
   };
   I18N['fr'] = {
-    'meta.title':'Invitation Binance · Démarrez votre aventure crypto | {{code}}',
-    'meta.desc':'Invitation Binance exclusive · Code de parrainage {{code}} · Cours en direct des principales cryptomonnaies',
+    'meta.title':'BonusBlock · Cours crypto en direct et guides | {{code}}',
+    'meta.desc':'Site indépendant de données de marché crypto avec des guides originaux. Code de parrainage {{code}}. Non affilié à Binance.',
     'topbar.tag':'◆ Invitation exclusive','topbar.note':'Code {{code}} · appliqué automatiquement',
     'nav.market':'Cours en direct','nav.benefits':'Avantages du parrainage','nav.steps':'Comment s’inscrire','nav.faq':'Questions fréquentes',
     'nav.cta':'S’inscrire','nav.ctaShort':'Inscription',
@@ -1023,8 +1091,8 @@
     'status.demo':'Données de démonstration · APIs de marché inaccessibles'
   };
   I18N['de'] = {
-    'meta.title':'Binance Einladung · Starte deine Krypto-Reise | {{code}}',
-    'meta.desc':'Exklusive Binance Einladung · Empfehlungscode {{code}} · Live-Kurse der wichtigsten Kryptowährungen',
+    'meta.title':'BonusBlock · Live-Kurse und Krypto-Guides | {{code}}',
+    'meta.desc':'Unabhängige Krypto-Marktdaten mit eigenen Ratgebern. Empfehlungscode {{code}}. Nicht mit Binance verbunden.',
     'topbar.tag':'◆ Exklusive Einladung','topbar.note':'Code {{code}} · wird automatisch angewendet',
     'nav.market':'Live-Kurse','nav.benefits':'Einladungsvorteile','nav.steps':'Registrierung','nav.faq':'Häufige Fragen',
     'nav.cta':'Registrieren','nav.ctaShort':'Registrieren',
@@ -1078,8 +1146,8 @@
     'status.demo':'Demodaten · Markt-APIs nicht erreichbar'
   };
   I18N['pt'] = {
-    'meta.title':'Convite Binance · Comece sua jornada cripto | {{code}}',
-    'meta.desc':'Convite exclusivo Binance · Código de indicação {{code}} · Preços em tempo real das principais criptomoedas',
+    'meta.title':'BonusBlock · Preços cripto ao vivo e guias | {{code}}',
+    'meta.desc':'Site independente de dados de mercado cripto com guias originais. Código de indicação {{code}}. Não afiliado à Binance.',
     'topbar.tag':'◆ Convite exclusivo','topbar.note':'Código {{code}} · aplicado automaticamente',
     'nav.market':'Preços em tempo real','nav.benefits':'Vantagens do convite','nav.steps':'Como se cadastrar','nav.faq':'Perguntas frequentes',
     'nav.cta':'Cadastrar-se','nav.ctaShort':'Cadastro',
@@ -1133,8 +1201,8 @@
     'status.demo':'Dados de demonstração · APIs de mercado indisponíveis'
   };
   I18N['ru'] = {
-    'meta.title':'Приглашение Binance · Начните свой путь в крипто | {{code}}',
-    'meta.desc':'Эксклюзивное приглашение Binance · Реферальный код {{code}} · Актуальные цены основных криптовалют',
+    'meta.title':'BonusBlock · Курсы криптовалют в реальном времени и гайды | {{code}}',
+    'meta.desc':'Независимый сайт о крипторынке с оригинальными материалами. Код приглашения {{code}}. Не связан с Binance.',
     'topbar.tag':'◆ Эксклюзивное приглашение','topbar.note':'Код {{code}} · применяется автоматически',
     'nav.market':'Цены в реальном времени','nav.benefits':'Преимущества приглашения','nav.steps':'Как зарегистрироваться','nav.faq':'Частые вопросы',
     'nav.cta':'Регистрация','nav.ctaShort':'Войти',
@@ -1190,8 +1258,8 @@
     'coin.xrp':'XRP','coin.doge':'Dogecoin','coin.ada':'Cardano','coin.trx':'TRON'
   };
   I18N['id'] = {
-    'meta.title':'Undangan Binance · Mulai Perjalanan Kripto Anda | {{code}}',
-    'meta.desc':'Undangan eksklusif Binance · Kode referral {{code}} · Harga langsung aset kripto utama',
+    'meta.title':'BonusBlock · Harga Kripto Live & Panduan | {{code}}',
+    'meta.desc':'Situs data pasar kripto independen dengan panduan orisinal. Kode referral {{code}}. Tidak terafiliasi dengan Binance.',
     'topbar.tag':'◆ Undangan eksklusif','topbar.note':'Kode {{code}} · diterapkan otomatis',
     'nav.market':'Harga langsung','nav.benefits':'Keuntungan undangan','nav.steps':'Cara daftar','nav.faq':'Pertanyaan umum',
     'nav.cta':'Daftar','nav.ctaShort':'Daftar',
@@ -1245,8 +1313,8 @@
     'status.demo':'Data demo · API pasar tidak terjangkau'
   };
   I18N['vi'] = {
-    'meta.title':'Lời mời Binance · Bắt đầu hành trình crypto | {{code}}',
-    'meta.desc':'Lời mời độc quyền Binance · Mã giới thiệu {{code}} · Giá trực tiếp các đồng tiền mã hóa chính',
+    'meta.title':'BonusBlock · Giá crypto trực tiếp & hướng dẫn | {{code}}',
+    'meta.desc':'Trang dữ liệu thị trường crypto độc lập với bài viết gốc. Mã giới thiệu {{code}}. Không liên kết với Binance.',
     'topbar.tag':'◆ Lời mời độc quyền','topbar.note':'Mã {{code}} · tự động áp dụng',
     'nav.market':'Giá trực tiếp','nav.benefits':'Ưu đãi lời mời','nav.steps':'Cách đăng ký','nav.faq':'Câu hỏi thường gặp',
     'nav.cta':'Đăng ký','nav.ctaShort':'Đăng ký',
@@ -1316,11 +1384,205 @@
     ID:'id', VN:'vi'
   };
 
+  /* ---------- 扩展文案：品牌去官方化 / 合规披露 / 原创内容 / 法律页 ----------
+     只列出新增或需要覆盖的键，合并进各语言包；未提供的键由 t() 自动回退到英文包。
+     这样无需改动上面 12 个语言包，且长篇法律声明在少数语种下统一使用英文版本。 */
+  var EXTRA = {
+    'zh-CN': {
+      'meta.title':'BonusBlock · 实时行情与加密指南 | {{code}}',
+      'meta.desc':'BonusBlock 独立加密货币行情资讯与原创指南 · 邀请码 {{code}} · 非交易所官方站点',
+      'hero.eyebrow':'独立行情资讯站 · 专属邀请通道',
+      'hero.note':'点击按钮将打开交易所注册页面，邀请码 {{code}} 已包含在链接中',
+      'footer.official':'前往注册页 ↗','footer.copy1':'© 2026 BonusBlock · 独立资讯站，非交易所官方',
+      'footer.brand':'BonusBlock 是独立的加密货币行情资讯网站，展示公开市场行情并提供注册引导。本站并非交易所官方，也不与其关联；活动细则、费率与权益一律以交易所注册页及活动中心公布内容为准。',
+      'a1':'通常不需要。本页所有注册按钮都指向带有 <b>ref={{code}}</b> 参数的交易所注册页面，邀请码会自动填充。若注册页未显示，请手动输入邀请码 <b>{{code}}</b> 后再提交，以确保邀请关系生效。',
+      's1.p':'点击页面任意「立即注册」按钮，打开交易所注册页面，邀请码已随链接携带',
+      'nav.insights':'资讯指南',
+      'disclosure.title':'独立站点声明与商业关系披露',
+      'disclosure.body':'BonusBlock 是独立的加密货币行情资讯网站，<b>并非由币安（Binance）或其任何关联方运营，也不代表交易所官方</b>。本页包含邀请（返佣）链接：若你通过本页链接注册并交易，我们可能从平台获得推广佣金，<b>你无需为此支付任何额外费用</b>。佣金关系不影响行情数据的展示与内容立场。价格来自公开市场接口，仅供参考；注册前请核对浏览器地址栏域名，并通过交易所官方渠道核实活动规则。',
+      'disclosure.note':'本站不提供投资建议、不代客理财、不代为注册，也不收集你的交易所账号信息。最近更新：2026 年 11 月。',
+      'insights.h2':'加密货币入门与市场指南',
+      'insights.p':'由本站独立撰写的原创内容，帮助你理解行情、风险与基础概念，而不只是看一个价格。',
+      'insights.note':'以下文章以简体中文撰写并附英文摘要；文中行情示例仅用于说明，不构成投资建议。',
+      'legal.privacy':'隐私政策','legal.about':'关于我们','legal.contact':'联系我们','legal.disclaimer':'免责声明',
+      'footer.legalLabel':'法律与合规'
+    },
+    'zh-TW': {
+      'meta.title':'BonusBlock · 即時行情與加密指南 | {{code}}',
+      'meta.desc':'BonusBlock 獨立加密貨幣行情資訊與原創指南 · 邀請碼 {{code}} · 非交易所官方站點',
+      'hero.eyebrow':'獨立行情資訊站 · 專屬邀請通道',
+      'hero.note':'點擊按鈕將開啟交易所註冊頁面，邀請碼 {{code}} 已包含在連結中',
+      'footer.official':'前往註冊頁 ↗','footer.copy1':'© 2026 BonusBlock · 獨立資訊站，非交易所官方',
+      'footer.brand':'BonusBlock 是獨立的加密貨幣行情資訊網站，展示公開市場行情並提供註冊引導。本站並非交易所官方，也不與其關聯；活動細則、費率與權益一律以交易所註冊頁及活動中心公布內容為準。',
+      'a1':'通常不需要。本頁所有註冊按鈕都指向帶有 <b>ref={{code}}</b> 參數的交易所註冊頁面，邀請碼會自動帶入。若註冊頁未顯示，請手動輸入邀請碼 <b>{{code}}</b> 後再提交，以確保邀請關係生效。',
+      's1.p':'點擊頁面任意「立即註冊」按鈕，開啟交易所註冊頁面，邀請碼已隨連結攜帶',
+      'nav.insights':'資訊指南',
+      'disclosure.title':'獨立站點聲明與商業關係揭露',
+      'disclosure.body':'BonusBlock 是獨立的加密貨幣行情資訊網站，<b>並非由幣安（Binance）或其任何關聯方營運，也不代表交易所官方</b>。本頁包含邀請（返佣）連結：若你透過本頁連結註冊並交易，我們可能從平台獲得推廣佣金，<b>你無需為此支付任何額外費用</b>。佣金關係不影響行情資料的展示與內容立場。價格來自公開市場介面，僅供參考；註冊前請核對瀏覽器網址列網域名稱，並透過交易所官方管道核實活動規則。',
+      'disclosure.note':'本站不提供投資建議、不代客理財、不代為註冊，也不收集你的交易所帳號資訊。最近更新：2026 年 11 月。',
+      'insights.h2':'加密貨幣入門與市場指南',
+      'insights.p':'由本站獨立撰寫的原創內容，幫助你理解行情、風險與基礎概念，而不只是看一個價格。',
+      'insights.note':'以下文章以簡體中文撰寫並附英文摘要；文中行情範例僅用於說明，不構成投資建議。',
+      'legal.privacy':'隱私政策','legal.about':'關於我們','legal.contact':'聯絡我們','legal.disclaimer':'免責聲明',
+      'footer.legalLabel':'法律與合規'
+    },
+    'en': {
+      'meta.title':'BonusBlock · Live Crypto Prices & Guides | {{code}}',
+      'meta.desc':'Independent crypto market data and original guides. Referral code {{code}}. Not affiliated with Binance.',
+      'hero.eyebrow':'Independent market site · Exclusive invite channel',
+      'hero.note':'The button opens the exchange registration page; code {{code}} is included in the link',
+      'footer.official':'Registration page ↗','footer.copy1':'© 2026 BonusBlock · Independent site, not operated by any exchange',
+      'footer.brand':'BonusBlock is an independent crypto information site showing public market data and linking to a registration page. We are not the exchange and are not affiliated with it. Activity rules, fees and rewards are set solely by the exchange.',
+      'a1':'Usually no. Every sign-up button on this page points to the exchange registration page with the <b>ref={{code}}</b> parameter, so the code is applied automatically. If it does not appear, enter <b>{{code}}</b> manually before submitting.',
+      's1.p':'Click any sign-up button to open the exchange registration page; the invite code is carried in the link',
+      'nav.insights':'Guides',
+      'disclosure.title':'Independent site & commercial relationship disclosure',
+      'disclosure.body':'BonusBlock is an independent crypto information site and is <b>not operated by, or affiliated with, Binance or any exchange</b>. This page contains affiliate (referral) links: if you register and trade through our links we may earn a commission from the platform, <b>at no extra cost to you</b>. This relationship does not affect the market data we display or our editorial position. Prices come from public market APIs and are for reference only. Always check the domain in your address bar and verify promotion rules through the exchange’s official channels before registering.',
+      'disclosure.note':'We do not provide investment advice, do not manage funds, do not register accounts on your behalf, and do not collect your exchange credentials. Last updated: November 2026.',
+      'insights.h2':'Crypto Basics & Market Guides',
+      'insights.p':'Original, independently written guides to help you understand prices, risk and the fundamentals — not just a ticker.',
+      'insights.note':'Articles are written in Simplified Chinese with an English summary. Market examples are illustrative and are not investment advice.',
+      'legal.privacy':'Privacy Policy','legal.about':'About Us','legal.contact':'Contact','legal.disclaimer':'Disclaimer',
+      'footer.legalLabel':'Legal'
+    },
+    'ja': {
+      'meta.title':'BonusBlock · 暗号資産のリアルタイム価格とガイド | {{code}}',
+      'meta.desc':'独立系の暗号資産マーケット情報サイト。オリジナル解説と招待コード {{code}}。取引所の公式サイトではありません。',
+      'hero.eyebrow':'独立系マーケット情報サイト · 専用招待チャネル',
+      'hero.note':'ボタンを押すと取引所の登録ページが開きます。招待コード {{code}} はリンクに含まれています',
+      'footer.official':'登録ページ ↗','footer.copy1':'© 2026 BonusBlock · 取引所とは無関係の独立サイト',
+      's1.p':'「今すぐ登録」ボタンを押すと取引所の登録ページが開き、招待コードがリンクに付与されます',
+      'nav.insights':'ガイド','disclosure.title':'独立サイトおよび商業関係の開示',
+      'disclosure.note':'投資助言、資産運用代行、代理登録は行いません。取引所の認証情報も収集しません。最終更新：2026 年 11 月。',
+      'insights.h2':'暗号資産の基礎とマーケットガイド',
+      'insights.p':'価格だけでなく、相場・リスク・基礎概念を理解するための独自記事です。',
+      'insights.note':'記事は簡体字中国語で執筆され、英語の要約を付けています。相場例は説明用であり投資助言ではありません。',
+      'legal.privacy':'プライバシーポリシー','legal.about':'私たちについて','legal.contact':'お問い合わせ','legal.disclaimer':'免責事項','footer.legalLabel':'法務'
+    },
+    'ko': {
+      'meta.title':'BonusBlock · 실시간 암호화폐 시세와 가이드 | {{code}}',
+      'meta.desc':'독립 암호화폐 시장 정보 사이트. 오리지널 가이드와 초대 코드 {{code}}. 거래소 공식 사이트가 아닙니다.',
+      'hero.eyebrow':'독립 시장 정보 사이트 · 전용 초대 채널',
+      'hero.note':'버튼을 누르면 거래소 가입 페이지가 열리며, 초대 코드 {{code}}가 링크에 포함되어 있습니다',
+      'footer.official':'가입 페이지 ↗','footer.copy1':'© 2026 BonusBlock · 거래소와 무관한 독립 사이트',
+      's1.p':'가입 버튼을 누르면 거래소 가입 페이지가 열리고 초대 코드가 링크에 함께 전달됩니다',
+      'nav.insights':'가이드','disclosure.title':'독립 사이트 및 상업 관계 공개',
+      'disclosure.note':'투자 자문, 자산 운용 대행, 가입 대행을 하지 않으며 거래소 계정 정보도 수집하지 않습니다. 최종 업데이트: 2026년 11월.',
+      'insights.h2':'암호화폐 기초와 시장 가이드',
+      'insights.p':'가격뿐 아니라 시세, 위험, 기본 개념을 이해하도록 돕는 자체 집필 콘텐츠입니다.',
+      'insights.note':'문서는 간체 중국어로 작성되었으며 영문 요약을 포함합니다. 시세 예시는 설명용이며 투자 자문이 아닙니다.',
+      'legal.privacy':'개인정보처리방침','legal.about':'소개','legal.contact':'문의하기','legal.disclaimer':'면책조항','footer.legalLabel':'법적 고지'
+    },
+    'es': {
+      'meta.title':'BonusBlock · Precios cripto en vivo y guías | {{code}}',
+      'meta.desc':'Sitio independiente de datos de mercado cripto con guías originales. Código de referido {{code}}. No afiliado a Binance.',
+      'hero.eyebrow':'Sitio de mercado independiente · Canal de invitación exclusivo',
+      'hero.note':'El botón abre la página de registro del exchange; el código {{code}} ya está incluido en el enlace',
+      'footer.official':'Página de registro ↗','footer.copy1':'© 2026 BonusBlock · Sitio independiente, no operado por ningún exchange',
+      's1.p':'Pulsa cualquier botón de registro para abrir la página del exchange; el código de invitación viaja en el enlace',
+      'nav.insights':'Guías','disclosure.title':'Sitio independiente y divulgación de relaciones comerciales',
+      'disclosure.note':'No ofrecemos asesoramiento de inversión, no gestionamos fondos, no registramos cuentas por terceros ni recopilamos credenciales del exchange. Última actualización: noviembre de 2026.',
+      'insights.h2':'Guías básicas y de mercado cripto',
+      'insights.p':'Contenido original escrito por nosotros para entender precios, riesgos y conceptos básicos, no solo un ticker.',
+      'insights.note':'Los artículos están en chino simplificado con resumen en inglés. Los ejemplos de precios son ilustrativos y no constituyen asesoramiento.',
+      'legal.privacy':'Política de privacidad','legal.about':'Sobre nosotros','legal.contact':'Contacto','legal.disclaimer':'Aviso legal','footer.legalLabel':'Legal'
+    },
+    'fr': {
+      'meta.title':'BonusBlock · Cours crypto en direct et guides | {{code}}',
+      'meta.desc':'Site indépendant de données de marché crypto avec des guides originaux. Code de parrainage {{code}}. Non affilié à Binance.',
+      'hero.eyebrow':'Site de marché indépendant · Canal d’invitation dédié',
+      'hero.note':'Le bouton ouvre la page d’inscription de l’exchange ; le code {{code}} est inclus dans le lien',
+      'footer.official':'Page d’inscription ↗','footer.copy1':'© 2026 BonusBlock · Site indépendant, non exploité par un exchange',
+      's1.p':'Cliquez sur un bouton d’inscription pour ouvrir la page de l’exchange ; le code d’invitation est transporté par le lien',
+      'nav.insights':'Guides','disclosure.title':'Site indépendant et divulgation des relations commerciales',
+      'disclosure.note':'Nous ne fournissons aucun conseil en investissement, ne gérons pas de fonds, ne créons pas de comptes pour autrui et ne collectons pas vos identifiants d’exchange. Dernière mise à jour : novembre 2026.',
+      'insights.h2':'Bases de la crypto et guides de marché',
+      'insights.p':'Des contenus originaux pour comprendre les cours, les risques et les notions fondamentales, pas seulement un ticker.',
+      'insights.note':'Les articles sont en chinois simplifié avec un résumé en anglais. Les exemples de cours sont illustratifs et ne constituent pas un conseil.',
+      'legal.privacy':'Politique de confidentialité','legal.about':'À propos','legal.contact':'Contact','legal.disclaimer':'Avertissement','footer.legalLabel':'Mentions légales'
+    },
+    'de': {
+      'meta.title':'BonusBlock · Live-Kurse und Krypto-Guides | {{code}}',
+      'meta.desc':'Unabhängige Krypto-Marktdaten mit eigenen Ratgebern. Empfehlungscode {{code}}. Nicht mit Binance verbunden.',
+      'hero.eyebrow':'Unabhängige Marktseite · Exklusiver Einladungskanal',
+      'hero.note':'Der Button öffnet die Registrierungsseite der Börse; der Code {{code}} ist im Link enthalten',
+      'footer.official':'Registrierungsseite ↗','footer.copy1':'© 2026 BonusBlock · Unabhängige Seite, nicht von einer Börse betrieben',
+      's1.p':'Klicke auf einen Registrierungsbutton, um die Seite der Börse zu öffnen; der Einladungscode ist im Link enthalten',
+      'nav.insights':'Ratgeber','disclosure.title':'Unabhängige Seite und Offenlegung kommerzieller Beziehungen',
+      'disclosure.note':'Wir bieten keine Anlageberatung, verwalten keine Gelder, registrieren keine Konten für andere und erfassen keine Börsen-Zugangsdaten. Zuletzt aktualisiert: November 2026.',
+      'insights.h2':'Krypto-Grundlagen und Marktratgeber',
+      'insights.p':'Eigens verfasste Inhalte, die Kurse, Risiken und Grundbegriffe erklären – nicht nur einen Ticker.',
+      'insights.note':'Die Artikel sind auf Chinesisch (vereinfacht) mit englischer Zusammenfassung verfasst. Kursbeispiele dienen nur der Veranschaulichung.',
+      'legal.privacy':'Datenschutz','legal.about':'Über uns','legal.contact':'Kontakt','legal.disclaimer':'Haftungsausschluss','footer.legalLabel':'Rechtliches'
+    },
+    'pt': {
+      'meta.title':'BonusBlock · Preços cripto ao vivo e guias | {{code}}',
+      'meta.desc':'Site independente de dados de mercado cripto com guias originais. Código de indicação {{code}}. Não afiliado à Binance.',
+      'hero.eyebrow':'Site de mercado independente · Canal de convite exclusivo',
+      'hero.note':'O botão abre a página de cadastro da exchange; o código {{code}} já está no link',
+      'footer.official':'Página de cadastro ↗','footer.copy1':'© 2026 BonusBlock · Site independente, não operado por nenhuma exchange',
+      's1.p':'Clique em qualquer botão de cadastro para abrir a página da exchange; o código de convite vai no link',
+      'nav.insights':'Guias','disclosure.title':'Site independente e divulgação de relações comerciais',
+      'disclosure.note':'Não oferecemos aconselhamento de investimento, não gerimos fundos, não criamos contas para terceiros e não recolhemos credenciais da exchange. Última atualização: novembro de 2026.',
+      'insights.h2':'Fundamentos de cripto e guias de mercado',
+      'insights.p':'Conteúdo original para entender preços, riscos e conceitos básicos, não apenas um ticker.',
+      'insights.note':'Os artigos estão em chinês simplificado com resumo em inglês. Os exemplos de preços são ilustrativos e não são aconselhamento.',
+      'legal.privacy':'Política de privacidade','legal.about':'Sobre nós','legal.contact':'Contato','legal.disclaimer':'Aviso legal','footer.legalLabel':'Jurídico'
+    },
+    'ru': {
+      'meta.title':'BonusBlock · Курсы криптовалют в реальном времени и гайды | {{code}}',
+      'meta.desc':'Независимый сайт о крипторынке с оригинальными материалами. Код приглашения {{code}}. Не связан с Binance.',
+      'hero.eyebrow':'Независимый информационный сайт · Канал приглашений',
+      'hero.note':'Кнопка открывает страницу регистрации биржи; код {{code}} уже содержится в ссылке',
+      'footer.official':'Страница регистрации ↗','footer.copy1':'© 2026 BonusBlock · Независимый сайт, не управляемый биржей',
+      's1.p':'Нажмите любую кнопку регистрации, чтобы открыть страницу биржи; код приглашения передаётся в ссылке',
+      'nav.insights':'Гайды','disclosure.title':'Независимый сайт и раскрытие коммерческих отношений',
+      'disclosure.note':'Мы не даём инвестиционных советов, не управляем средствами, не регистрируем аккаунты за других и не собираем данные для входа на биржу. Обновлено: ноябрь 2026.',
+      'insights.h2':'Основы криптовалют и рыночные гайды',
+      'insights.p':'Оригинальные материалы, которые помогают понять цены, риски и базовые понятия, а не только тикер.',
+      'insights.note':'Статьи написаны на упрощённом китайском с кратким переводом на английский. Примеры цен носят иллюстративный характер.',
+      'legal.privacy':'Политика конфиденциальности','legal.about':'О нас','legal.contact':'Контакты','legal.disclaimer':'Отказ от ответственности','footer.legalLabel':'Правовая информация'
+    },
+    'id': {
+      'meta.title':'BonusBlock · Harga Kripto Live & Panduan | {{code}}',
+      'meta.desc':'Situs data pasar kripto independen dengan panduan orisinal. Kode referral {{code}}. Tidak terafiliasi dengan Binance.',
+      'hero.eyebrow':'Situs pasar independen · Kanal undangan eksklusif',
+      'hero.note':'Tombol membuka halaman pendaftaran bursa; kode {{code}} sudah termasuk dalam tautan',
+      'footer.official':'Halaman pendaftaran ↗','footer.copy1':'© 2026 BonusBlock · Situs independen, tidak dikelola bursa',
+      's1.p':'Klik tombol pendaftaran untuk membuka halaman bursa; kode undangan ikut dalam tautan',
+      'nav.insights':'Panduan','disclosure.title':'Situs independen & pengungkapan hubungan komersial',
+      'disclosure.note':'Kami tidak memberikan nasihat investasi, tidak mengelola dana, tidak mendaftarkan akun untuk orang lain, dan tidak mengumpulkan kredensial bursa. Diperbarui: November 2026.',
+      'insights.h2':'Dasar kripto & panduan pasar',
+      'insights.p':'Konten orisinal untuk memahami harga, risiko, dan konsep dasar — bukan sekadar ticker.',
+      'insights.note':'Artikel ditulis dalam bahasa Tionghoa Sederhana dengan ringkasan bahasa Inggris. Contoh harga hanya ilustrasi.',
+      'legal.privacy':'Kebijakan Privasi','legal.about':'Tentang Kami','legal.contact':'Kontak','legal.disclaimer':'Penafian','footer.legalLabel':'Legal'
+    },
+    'vi': {
+      'meta.title':'BonusBlock · Giá crypto trực tiếp & hướng dẫn | {{code}}',
+      'meta.desc':'Trang dữ liệu thị trường crypto độc lập với bài viết gốc. Mã giới thiệu {{code}}. Không liên kết với Binance.',
+      'hero.eyebrow':'Trang thông tin thị trường độc lập · Kênh mời riêng',
+      'hero.note':'Nút sẽ mở trang đăng ký của sàn; mã {{code}} đã có trong liên kết',
+      'footer.official':'Trang đăng ký ↗','footer.copy1':'© 2026 BonusBlock · Trang độc lập, không do sàn vận hành',
+      's1.p':'Nhấn nút đăng ký để mở trang của sàn; mã mời được mang theo trong liên kết',
+      'nav.insights':'Hướng dẫn','disclosure.title':'Trang độc lập & công bố quan hệ thương mại',
+      'disclosure.note':'Chúng tôi không cung cấp tư vấn đầu tư, không quản lý tiền, không đăng ký tài khoản thay người khác và không thu thập thông tin đăng nhập sàn. Cập nhật: tháng 11/2026.',
+      'insights.h2':'Kiến thức cơ bản & hướng dẫn thị trường',
+      'insights.p':'Nội dung tự biên soạn giúp bạn hiểu giá, rủi ro và khái niệm nền tảng, không chỉ một bảng giá.',
+      'insights.note':'Bài viết bằng tiếng Trung giản thể kèm tóm tắt tiếng Anh. Ví dụ giá chỉ mang tính minh họa.',
+      'legal.privacy':'Chính sách quyền riêng tư','legal.about':'Về chúng tôi','legal.contact':'Liên hệ','legal.disclaimer':'Miễn trừ trách nhiệm','footer.legalLabel':'Pháp lý'
+    }
+  };
+  Object.keys(EXTRA).forEach(function(l){
+    if(!I18N[l]) I18N[l] = {};
+    Object.keys(EXTRA[l]).forEach(function(k){ I18N[l][k] = EXTRA[l][k]; });
+  });
+
   // 静态文案映射：[选择器, 文案键, 模式]。text 模式只替换首个文本节点，保留图标 / 箭头 / + 等子元素
   var DOM_MAP = [
     ['.topbar .tag','topbar.tag','text'], ['.topbar .left span:nth-child(2)','topbar.note','text'],
-    ['.nav-links a:nth-child(1)','nav.market','text'], ['.nav-links a:nth-child(2)','nav.benefits','text'],
-    ['.nav-links a:nth-child(3)','nav.steps','text'], ['.nav-links a:nth-child(4)','nav.faq','text'],
+    ['.nav-links a:nth-child(1)','nav.market','text'], ['.nav-links a:nth-child(2)','nav.insights','text'],
+    ['.nav-links a:nth-child(3)','nav.benefits','text'], ['.nav-links a:nth-child(4)','nav.steps','text'],
+    ['.nav-links a:nth-child(5)','nav.faq','text'],
     ['.cta-full','nav.cta','text'], ['.cta-short','nav.ctaShort','text'],
     ['#lmHead','lang.title','text'], ['#langAutoText','lang.auto','text'],
     ['.eyebrow','hero.eyebrow','text'], ['h1','hero.t1','text'], ['h1 .hl','hero.t2','text'],
@@ -1353,6 +1615,14 @@
     ['.f-links a:nth-child(5)','footer.official','text'],
     ['.risk','footer.risk','html'],
     ['.copyright span:nth-child(1)','footer.copy1','text'], ['.copyright span:nth-child(2)','footer.copy2','text'],
+    ['#disTitle','disclosure.title','text'], ['#disBody','disclosure.body','html'], ['#disNote','disclosure.note','text'],
+    ['#dlAbout','legal.about','text'], ['#dlDisclaimer','legal.disclaimer','text'],
+    ['#dlPrivacy','legal.privacy','text'], ['#dlContact','legal.contact','text'],
+    ['#insights .sec-head h2','insights.h2','text'], ['#insights .sec-head p','insights.p','text'],
+    ['#insNotes','insights.note','text'],
+    ['#flLabel','footer.legalLabel','text'],
+    ['#flAbout','legal.about','text'], ['#flPrivacy','legal.privacy','text'],
+    ['#flContact','legal.contact','text'], ['#flDisclaimer','legal.disclaimer','text'],
     ['.mobile-bar .btn','mobile.cta','text']
   ];
 
@@ -1526,6 +1796,7 @@
     updateGeoNote();
     updateColorBtn();
     if(!opts.skipDynamic){
+      renderInsights();
       renderCards();
       renderHero();
       renderTicker(true);
@@ -1533,6 +1804,39 @@
       if(lastPaint) $('updTime').textContent = t('market.updated', lastPaint);
     }
     if(!opts.silent) toast(t('lang.switched', {name:(LANG_MAP[code] || {}).name || code}));
+  }
+
+  /* ---------- 原创资讯卡片（中文原文 + 英文标题，随语言切换） ---------- */
+  var ARTICLES = [
+    {file:'articles/bitcoin-basics.html', tag:'新手入门', min:'约 6 分钟', t:'比特币是什么：从账本问题到区块链', d:'不谈价格，先讲清楚它到底解决了什么问题：谁记账、怎么防篡改、为什么总量是 2100 万。'},
+    {file:'articles/how-to-read-market.html', tag:'行情解读', min:'约 7 分钟', t:'如何读懂行情页：价格、涨跌幅与 24 小时高低', d:'逐项拆解行情卡片上的每个数字，说明它们怎么算出来、又容易在哪些地方被误读。'},
+    {file:'articles/spot-vs-contract.html', tag:'基础概念', min:'约 8 分钟', t:'现货与合约：两种交易方式的本质区别', d:'从交割、杠杆、保证金到强平机制，解释为什么同样的行情方向，结果可能完全不同。'},
+    {file:'articles/wallet-security.html', tag:'资产安全', min:'约 9 分钟', t:'钱包与助记词：资产安全的第一课', d:'托管与非托管钱包的区别、助记词为什么不能截图，以及最常见的几类钓鱼手法。'},
+    {file:'articles/risk-management.html', tag:'风险管理', min:'约 7 分钟', t:'仓位与风险：为什么先想「最多亏多少」', d:'用具体算式说明仓位、止损与回撤的关系，以及为什么连胜之后反而最容易出事。'},
+    {file:'articles/data-sources.html', tag:'数据说明', min:'约 5 分钟', t:'本站行情数据从哪来：公开接口、延迟与误差', d:'公开说明我们调用哪些接口、刷新频率、兜底策略，以及为什么页面价格会和交易所成交价有细微差别。'}
+  ];
+  var ARTICLES_EN = [
+    {file:'articles/bitcoin-basics.html', tag:'Basics', min:'6 min read', t:'What Is Bitcoin: From the Ledger Problem to the Blockchain', d:'Forget the price for a moment. Who keeps the records, how is tampering prevented, and why is the supply capped at 21 million?'},
+    {file:'articles/how-to-read-market.html', tag:'Market Data', min:'7 min read', t:'How to Read a Market Page: Price, Change and 24h High/Low', d:'A field-by-field breakdown of every number on a price card, how each is calculated, and where it is commonly misread.'},
+    {file:'articles/spot-vs-contract.html', tag:'Concepts', min:'8 min read', t:'Spot vs. Derivatives: The Real Difference', d:'Settlement, leverage, margin and liquidation — why the same market direction can produce very different outcomes.'},
+    {file:'articles/wallet-security.html', tag:'Security', min:'9 min read', t:'Wallets and Seed Phrases: Your First Security Lesson', d:'Custodial vs. self-custody, why a seed phrase must never be screenshotted, and the most common phishing patterns.'},
+    {file:'articles/risk-management.html', tag:'Risk', min:'7 min read', t:'Position Sizing: Why You Should Ask How Much You Can Lose First', d:'Concrete arithmetic behind position size, stop loss and drawdown — and why a winning streak is often the most dangerous moment.'},
+    {file:'articles/data-sources.html', tag:'Methodology', min:'5 min read', t:'Where Our Prices Come From: Public APIs, Latency and Error', d:'Which endpoints we call, how often we refresh, what the fallbacks are, and why our quote may differ slightly from your fill.'}
+  ];
+  function renderInsights(){
+    var box = $('insGrid');
+    if(!box) return;
+    var zh = (currentLang === 'zh-CN' || currentLang === 'zh-TW');
+    var list = zh ? ARTICLES : ARTICLES_EN;
+    var more = zh ? '阅读全文' : 'Read article';
+    box.innerHTML = list.map(function(a){
+      return '<a class="ins-card" href="' + a.file + '">' +
+        '<span class="ins-tag">' + a.tag + '</span>' +
+        '<h3>' + a.t + '</h3>' +
+        '<p>' + a.d + '</p>' +
+        '<div class="ins-foot"><span>' + a.min + '</span><span class="more">' + more + ' →</span></div>' +
+      '</a>';
+    }).join('');
   }
 
   /* ---------- 工具 ---------- */
@@ -1878,6 +2182,7 @@
   applyLang(initial, {silent:true, skipDynamic:true});
 
   renderSkeleton();
+  renderInsights();
   renderTicker(true);
   renderHero();
   bind();
