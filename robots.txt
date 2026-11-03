@@ -10,4 +10,4 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
-Sitemap: https://g-uno-web.github.io/BonusBlock/sitemap.xml
+Sitemap: https://bonusblock.g-uno.top/sitemap.xml
